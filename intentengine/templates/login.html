@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" class="cui">
+    <head>
+        <title>Login</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/cui-standard.min.css' %}"/>
+    <style>
+    body {
+      background: url('static/img/AQ79275.jpg') no-repeat center center fixed
+    }
+
+    #login_panel {
+      margin-top: 100px;
+    }
+
+    #login_panel img {
+      margin-bottom: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    #login_panel button {
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    div#login_fail h3 {
+      color: #cf2030;
+    }
+
+    #center-custom{
+    margin-right: auto;
+    margin-left: auto;
+        }
+    </style>
+
+    </head>
+
+    <body>
+        <div class="content-fluid">
+            <div id="center-custom"
+
+        <div class="container">
+            <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md4 col-md-offset-4">
+            <div id="login_panel" class="panel panel--raised panel--loose">
+            <div class="col-md-12">
+                <img class="img" src="static/img/Black_Logo.png" height="85" alt="Cisco Logo"/>
+            </div>
+            <form action ='/enterIntent/' method="POST">
+            <div class="col-md-12">
+            <div class="form-group">
+                <div class="form-group__text">
+                    <input id="username" name="username" type="text" autofocus>
+                    <label for="username">Username</label>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+            <div class="form-group">
+              <div class="form-group__text">
+                <input id="password" name="password" type="password">
+                <label for="password">Password</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <button type="submit" class="btn btn--wide btn--primary">Login</button>
+          </div>
+        </form>
+              </div>
+    </div>
+  </div>
+</div>
+        </div>
+</div>
+    </body>
+</html>
